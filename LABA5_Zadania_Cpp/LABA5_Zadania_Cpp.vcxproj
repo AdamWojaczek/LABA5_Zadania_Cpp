@@ -124,14 +124,21 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="CApplication.cpp" />
+    <ClCompile Include="TicTacToeGame\CBoard.cpp" />
     <ClCompile Include="CIOStream.cpp" />
+    <ClCompile Include="TicTacToeGame\CPlayer.cpp" />
+    <ClCompile Include="TicTacToeGame\CTicTacToeGame.cpp" />
     <ClCompile Include="Main.cpp" />
     <ClCompile Include="StrUtils.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="CApplication.h" />
+    <ClInclude Include="TicTacToeGame\CBoard.h" />
     <ClInclude Include="CIOStream.h" />
+    <ClInclude Include="TicTacToeGame\CPlayer.h" />
+    <ClInclude Include="TicTacToeGame\CTicTacToeGame.h" />
     <ClInclude Include="StrUtils.h" />
+    <ClInclude Include="TicTacToeGame\TicTacToeTypes.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

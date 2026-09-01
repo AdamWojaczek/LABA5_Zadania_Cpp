@@ -21,7 +21,7 @@ public:
 	void Print(const string& text);
 	void Print(int value);
 	void Print(double value);
-	void PrintLine(const string& text);
+	void PrintLine(const string& text = "");
 	
 	void WaitForEnter();
 	void ClearInput();

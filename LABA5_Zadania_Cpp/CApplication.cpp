@@ -73,6 +73,10 @@ void CApplication::DoExercise(int id, bool clearScreen)
 		case 1:
 			CalculateSphereVolume();
 			break;
+
+		case 2:
+			RunTicTacToeGame();
+			break;
 		
 		default:
 			ios.PrintLine("Brak zadanie o numerze " + StrUtils::IntToStr(id) + "!");
@@ -151,6 +155,23 @@ void CApplication::CalculateSphereVolume()
 	}
 	else
 		ios.PrintLine("Promien kuli musi byc wiekszy od 0.0!");
+}
+
+//---------------------------------------------------------------------------------------------------------------------
+// [2] Zaimplementuj grê w kó³ko i krzy¿yk w C++.
+// Dodatkowo: Dodaj mo¿liwoœæ grania z komputerem.
+
+void CApplication::RunTicTacToeGame()
+{
+	CTicTacToeGame *pGame = new CTicTacToeGame();
+	
+	if (pGame)
+	{
+		pGame->Run();
+		
+		delete pGame;
+		pGame = nullptr;
+	}
 }
 
 //---------------------------------------------------------------------------------------------------------------------

@@ -4,6 +4,7 @@
 #include <vector>
 #include "CIOStream.h"
 #include "StrUtils.h"
+#include "TicTacToeGame\CTicTacToeGame.h"
 
 //---------------------------------------------------------------------------------------------------------------------
 
@@ -19,7 +20,7 @@ private:
 
 	vector<string> exerciseNames {
 								   "Obliczanie objetosci kuli",
-								   "Gra 'Kolko i krzyzyk' (w przygotowaniu)",
+								   "Gra 'Kolko i krzyzyk'",
 								   "Zadanie kolejne (w planach)"
 								 };
 	void ShowMenu();
@@ -27,6 +28,7 @@ private:
 
 	// metody realizuj¹ce poszczególne zadania
 	void CalculateSphereVolume();
+	void RunTicTacToeGame();
 
 public:
 	int Run();
