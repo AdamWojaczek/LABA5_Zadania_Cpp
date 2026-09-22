@@ -7,3 +7,8 @@ Zadania:
 
 2. Zaimplementuj grę w kółko i krzyżyk w C++.
    Dodatkowo: Dodaj możliwość grania z komputerem.
+   
+3. Zaimplementować klasę reprezentującą liczbę zespoloną.
+   Zaimplementuj konstruktor parametryczny i kopiujący oraz przeciążone operatory + , -, *, / .
+   Dodatkowo: Zaimplementuj przeciążenie operatora <<
+   

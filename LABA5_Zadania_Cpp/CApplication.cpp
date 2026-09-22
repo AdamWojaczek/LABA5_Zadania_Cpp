@@ -77,6 +77,10 @@ void CApplication::DoExercise(int id, bool clearScreen)
 		case 2:
 			RunTicTacToeGame();
 			break;
+
+		case 3:
+			TestCComplex();
+			break;
 		
 		default:
 			ios.PrintLine("Brak zadanie o numerze " + StrUtils::IntToStr(id) + "!");
@@ -175,3 +179,41 @@ void CApplication::RunTicTacToeGame()
 }
 
 //---------------------------------------------------------------------------------------------------------------------
+// [3] Zaimplementowaæ klasê reprezentuj¹c¹ liczbê zespolon¹.
+// Zaimplementuj konstruktor parametryczny i kopiuj¹cy oraz przeci¹¿one operatory + , -, *, / .
+// Dodatkowo: Zaimplementuj przeci¹¿enie operatora <<
+
+void CApplication::TestCComplex()
+{
+	// Krótki test sprawdzaj¹cy, czy klasa dzia³a.
+
+	CComplex c1(10.5, 5.6);
+	CComplex c2(3.4, -2.8);
+	CComplex c3, c4, c5, c6, c7, c8, c9, c10, c11, c12, c13, c14;
+
+	c3 = c4 = c5 = c6 = c7 = c1;
+	c4 += c2;
+	c5 -= c2;
+	c6 *= c2;
+	c7 /= c2;
+	c11 = c1 + c4;
+	c12 = c1 - c5;
+	c13 = c1 * c6;
+	c14 = c1 / c7;
+
+	std::cout << "c1 = " << c1 << std::endl;
+	std::cout << "c2 = " << c2 << std::endl;
+	std::cout << "c3 = c4 = c5 = c6 = c7 = c1" << std::endl;
+	std::cout << std::endl;
+	std::cout << "[c3  = c1]  c3 = " << c3 << std::endl;
+	std::cout << "[c4 += c2]  c4 = " << c4 << std::endl;
+	std::cout << "[c5 -= c2]  c5 = " << c5 << std::endl;
+	std::cout << "[c6 *= c2]  c6 = " << c6 << std::endl;
+	std::cout << "[c7 /= c2]  c7 = " << c7 << std::endl;
+	std::cout << std::endl;
+	std::cout << "[c11 = c1 + c4]  c11 = " << c11 << std::endl;
+	std::cout << "[c12 = c1 - c5]  c12 = " << c12 << std::endl;
+	std::cout << "[c13 = c1 * c6]  c13 = " << c13 << std::endl;
+	std::cout << "[c14 = c1 / c7]  c14 = " << c14 << std::endl;
+
+}

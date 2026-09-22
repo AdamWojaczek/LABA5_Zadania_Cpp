@@ -124,6 +124,7 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="CApplication.cpp" />
+    <ClCompile Include="Complex\CComplex.cpp" />
     <ClCompile Include="TicTacToeGame\CBoard.cpp" />
     <ClCompile Include="CIOStream.cpp" />
     <ClCompile Include="TicTacToeGame\CPlayer.cpp" />
@@ -133,6 +134,7 @@
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="CApplication.h" />
+    <ClInclude Include="Complex\CComplex.h" />
     <ClInclude Include="TicTacToeGame\CBoard.h" />
     <ClInclude Include="CIOStream.h" />
     <ClInclude Include="TicTacToeGame\CPlayer.h" />

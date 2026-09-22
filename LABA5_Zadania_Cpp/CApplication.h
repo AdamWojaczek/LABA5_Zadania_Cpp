@@ -5,6 +5,7 @@
 #include "CIOStream.h"
 #include "StrUtils.h"
 #include "TicTacToeGame\CTicTacToeGame.h"
+#include "Complex\CComplex.h"
 
 //---------------------------------------------------------------------------------------------------------------------
 
@@ -21,7 +22,7 @@ private:
 	vector<string> exerciseNames {
 								   "Obliczanie objetosci kuli",
 								   "Gra 'Kolko i krzyzyk'",
-								   "Zadanie kolejne (w planach)"
+								   "Testowa klasa CComplex dla liczb zespolonych"
 								 };
 	void ShowMenu();
 	void DoExercise(int id, bool clearScreen = true);
@@ -29,6 +30,7 @@ private:
 	// metody realizuj¹ce poszczególne zadania
 	void CalculateSphereVolume();
 	void RunTicTacToeGame();
+	void TestCComplex();
 
 public:
 	int Run();
