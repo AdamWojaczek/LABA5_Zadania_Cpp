@@ -11,4 +11,8 @@ Zadania:
 3. Zaimplementować klasę reprezentującą liczbę zespoloną.
    Zaimplementuj konstruktor parametryczny i kopiujący oraz przeciążone operatory + , -, *, / .
    Dodatkowo: Zaimplementuj przeciążenie operatora <<
-   
+
+4. Zaimplementuj konsolową symulację Gry w Życie (https://pl.wikipedia.org/wiki/Gra_w_%C5%BCycie)
+   z możliwością ustawienia warunków początkowych. Przejście pomiędzy kolejnymi etapami symulacji
+   może być realizowane automatycznie, po upływie określonego czasu lub ręcznie po wczytaniu inputu.
+   Dodatkowo: Zaimplementuj możliwość wczytania warunków początkowych z pliku.

@@ -1,10 +1,18 @@
 #include "StrUtils.h"
 
+#include <sstream>
+#include <iomanip>
+
 //---------------------------------------------------------------------------------------------------------------------
 
 namespace StrUtils
 {
 	string IntToStr(int value)
+	{
+		return std::to_string(value);
+	}
+
+	string UIntToStr(unsigned int value)
 	{
 		return std::to_string(value);
 	}
@@ -52,6 +60,20 @@ namespace StrUtils
 		catch (const std::exception)
 		{
 			result = false;
+		}
+
+		return result;
+	}
+
+	bool StrToUInt(const string& text, unsigned int& value)
+	{
+		bool result = false;
+		int temp;
+
+		if (StrToInt(text, temp))
+		{
+			value = static_cast<unsigned int>(temp);
+			result = true;
 		}
 
 		return result;

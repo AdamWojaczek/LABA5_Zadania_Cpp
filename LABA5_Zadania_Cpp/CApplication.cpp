@@ -1,5 +1,10 @@
 #include "CApplication.h"
 
+#include "StrUtils.h"
+#include "TicTacToeGame\CTicTacToeGame.h"
+#include "Complex\CComplex.h"
+#include "LifeGame\CLifeGame.h"
+
 //---------------------------------------------------------------------------------------------------------------------
 
 int CApplication::Run()
@@ -70,18 +75,11 @@ void CApplication::DoExercise(int id, bool clearScreen)
 
 	switch (id)
 	{
-		case 1:
-			CalculateSphereVolume();
-			break;
-
-		case 2:
-			RunTicTacToeGame();
-			break;
-
-		case 3:
-			TestCComplex();
-			break;
-		
+		case 1: CalculateSphereVolume(); break;
+		case 2: RunTicTacToeGame(); break;
+		case 3: TestCComplex(); break;
+		case 4: RunLifeGame(); break;
+	
 		default:
 			ios.PrintLine("Brak zadanie o numerze " + StrUtils::IntToStr(id) + "!");
 	}
@@ -216,4 +214,22 @@ void CApplication::TestCComplex()
 	std::cout << "[c13 = c1 * c6]  c13 = " << c13 << std::endl;
 	std::cout << "[c14 = c1 / c7]  c14 = " << c14 << std::endl;
 
+}
+
+//---------------------------------------------------------------------------------------------------------------------
+// [4] Zaimplementuj konsolow¹ symulacjê Gry w ¯ycie (https://pl.wikipedia.org/wiki/Gra_w_%C5%BCycie) z mo¿liwoœci¹
+// ustawienia warunków pocz¹tkowych. Przejœcie pomiêdzy kolejnymi etapami symulacji mo¿e byæ realizowane automatycznie,
+// po up³ywie okreœlonego czasu lub rêcznie po wczytaniu inputu.
+// Dodatkowo: Zaimplementuj mo¿liwoœæ wczytania warunków pocz¹tkowych z pliku.
+
+void CApplication::RunLifeGame()
+{
+	CLifeGame* pGame = new CLifeGame();
+
+	if (pGame)
+	{
+		pGame->Run();
+		delete pGame;
+		pGame = nullptr;
+	}
 }

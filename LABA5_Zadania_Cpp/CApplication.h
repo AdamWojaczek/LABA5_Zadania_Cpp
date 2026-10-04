@@ -3,9 +3,6 @@
 #include <string>
 #include <vector>
 #include "CIOStream.h"
-#include "StrUtils.h"
-#include "TicTacToeGame\CTicTacToeGame.h"
-#include "Complex\CComplex.h"
 
 //---------------------------------------------------------------------------------------------------------------------
 
@@ -17,20 +14,24 @@ private:
 	template<typename T>
 	using vector = std::vector<T>;
 
-	CIOStream ios;			// nak³adka na operacje cin/cout
+	CIOStream ios;					// input/output stream wrapper
 
-	vector<string> exerciseNames {
-								   "Obliczanie objetosci kuli",
-								   "Gra 'Kolko i krzyzyk'",
-								   "Testowa klasa CComplex dla liczb zespolonych"
-								 };
+	// Task display names
+	vector<string> exerciseNames = {
+		"Obliczanie objetosci kuli",
+		"Gra 'Kolko i krzyzyk'",
+		"Testowa klasa CComplex dla liczb zespolonych",
+		"'Game of life'"
+	};
+
 	void ShowMenu();
 	void DoExercise(int id, bool clearScreen = true);
 
-	// metody realizuj¹ce poszczególne zadania
+	// Methods implementing individual tasks
 	void CalculateSphereVolume();
 	void RunTicTacToeGame();
 	void TestCComplex();
+	void RunLifeGame();
 
 public:
 	int Run();

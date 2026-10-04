@@ -1,8 +1,6 @@
 #pragma once
 
 #include <string>
-#include <sstream>
-#include <iomanip>
 
 //---------------------------------------------------------------------------------------------------------------------
 
@@ -11,11 +9,13 @@ namespace StrUtils
 	using string = std::string;
 
 	string IntToStr(int value);
+	string UIntToStr(unsigned int value);
 	string DoubleToStr(double value);
 	string DoubleToStrFixed(double value, unsigned int precision = 3);
 	string DoubleToStrScientific(double value);
 	
 	bool StrToInt(const string& text, int& value);
+	bool StrToUInt(const string& text, unsigned int& value);
 	bool StrToDouble(const string& text, double& value);
 
 	bool StrCompareIC(const string& text1, const string& text2);

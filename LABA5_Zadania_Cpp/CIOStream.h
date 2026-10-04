@@ -1,10 +1,6 @@
 #pragma once
 
-#include <iostream>
 #include <string>
-#include <limits>
-
-#include "StrUtils.h"
 
 //---------------------------------------------------------------------------------------------------------------------
 
@@ -13,7 +9,7 @@ class CIOStream
 private:
 	using string = std::string;
 
-	string m_last{};					// ostatni odczyt
+	string m_last{};					// last read from input stream
 
 public:
 	void ClearScreen();

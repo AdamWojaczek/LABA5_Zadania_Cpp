@@ -1,5 +1,10 @@
 #include "CIOStream.h"
 
+#include <iostream>
+#include <limits>
+
+#include "StrUtils.h"
+
 //---------------------------------------------------------------------------------------------------------------------
 
 void CIOStream::ClearScreen()
