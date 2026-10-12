@@ -126,11 +126,18 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="CApplication.cpp" />
+    <ClCompile Include="PokerGame\CHand.cpp" />
     <ClCompile Include="CIniFileParser.cpp" />
     <ClCompile Include="Complex\CComplex.cpp" />
     <ClCompile Include="LifeGame\CLifeBoard.cpp" />
     <ClCompile Include="LifeGame\CLifeCell.cpp" />
     <ClCompile Include="LifeGame\CLifeGame.cpp" />
+    <ClCompile Include="PokerGame\CCard.cpp" />
+    <ClCompile Include="PokerGame\CDeck.cpp" />
+    <ClCompile Include="PokerGame\CHandValue.cpp" />
+    <ClCompile Include="PokerGame\CPokerGame.cpp" />
+    <ClCompile Include="PokerGame\CPokerPlayer.cpp" />
+    <ClCompile Include="PokerGame\CPokerRules.cpp" />
     <ClCompile Include="TicTacToeGame\CBoard.cpp" />
     <ClCompile Include="CIOStream.cpp" />
     <ClCompile Include="TicTacToeGame\CPlayer.cpp" />
@@ -140,12 +147,20 @@
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="CApplication.h" />
+    <ClInclude Include="PokerGame\CardTypes.h" />
+    <ClInclude Include="PokerGame\CHand.h" />
     <ClInclude Include="CIniFileParser.h" />
     <ClInclude Include="Complex\CComplex.h" />
     <ClInclude Include="LifeGame\CLifeBoard.h" />
     <ClInclude Include="LifeGame\CLifeCell.h" />
     <ClInclude Include="LifeGame\CLifeGame.h" />
     <ClInclude Include="LifeGame\LifeConstans.h" />
+    <ClInclude Include="PokerGame\CCard.h" />
+    <ClInclude Include="PokerGame\CDeck.h" />
+    <ClInclude Include="PokerGame\CHandValue.h" />
+    <ClInclude Include="PokerGame\CPokerGame.h" />
+    <ClInclude Include="PokerGame\CPokerPlayer.h" />
+    <ClInclude Include="PokerGame\CPokerRules.h" />
     <ClInclude Include="TicTacToeGame\CBoard.h" />
     <ClInclude Include="CIOStream.h" />
     <ClInclude Include="TicTacToeGame\CPlayer.h" />

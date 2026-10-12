@@ -16,3 +16,7 @@ Zadania:
    z możliwością ustawienia warunków początkowych. Przejście pomiędzy kolejnymi etapami symulacji
    może być realizowane automatycznie, po upływie określonego czasu lub ręcznie po wczytaniu inputu.
    Dodatkowo: Zaimplementuj możliwość wczytania warunków początkowych z pliku.
+
+5. Zaimplementować tekstową grę w pokera zawierającą wymianę kart, porównywanie układów
+   i proste zachowanieprzeciwnika komputerowego. Użyj technik programowania obiektowego.
+   Dodatkowo: Dodać możliwość prowadzenia licytacji.

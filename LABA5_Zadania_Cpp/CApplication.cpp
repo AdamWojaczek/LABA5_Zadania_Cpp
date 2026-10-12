@@ -4,6 +4,7 @@
 #include "TicTacToeGame\CTicTacToeGame.h"
 #include "Complex\CComplex.h"
 #include "LifeGame\CLifeGame.h"
+#include "PokerGame\CPokerGame.h"
 
 //---------------------------------------------------------------------------------------------------------------------
 
@@ -59,7 +60,7 @@ void CApplication::ShowMenu()
 	for (int i = 0; i < exerciseNames.size(); i++)
 		text += string("\n  [" + StrUtils::IntToStr(i + 1) + "] ") + exerciseNames[i];
 		
-	text += "\n\n  [0]\tKoniec\n\n";
+	text += "\n\n  [0] Koniec\n\n";
 	
 	ios.Print(text);
 }
@@ -79,6 +80,7 @@ void CApplication::DoExercise(int id, bool clearScreen)
 		case 2: RunTicTacToeGame(); break;
 		case 3: TestCComplex(); break;
 		case 4: RunLifeGame(); break;
+		case 5: RunPokerGame(); break;
 	
 		default:
 			ios.PrintLine("Brak zadanie o numerze " + StrUtils::IntToStr(id) + "!");
@@ -233,3 +235,22 @@ void CApplication::RunLifeGame()
 		pGame = nullptr;
 	}
 }
+
+//---------------------------------------------------------------------------------------------------------------------
+// [5] Zaimplementowaæ tekstow¹ grê w pokera zawieraj¹c¹ wymianê kart, porównywanie uk³adów i proste zachowanie
+// przeciwnika komputerowego. U¿yj technik programowania obiektowego.
+// Dodatkowo: Dodaæ mo¿liwoœæ prowadzenia licytacji.
+
+void CApplication::RunPokerGame()
+{
+	CPokerGame* pGame = new CPokerGame();
+
+	if (pGame)
+	{
+		pGame->Run();
+		delete pGame;
+		pGame = nullptr;
+	}
+}
+
+//---------------------------------------------------------------------------------------------------------------------

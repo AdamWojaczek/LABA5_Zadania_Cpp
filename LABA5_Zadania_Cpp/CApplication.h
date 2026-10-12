@@ -19,9 +19,10 @@ private:
 	// Task display names
 	vector<string> exerciseNames = {
 		"Obliczanie objetosci kuli",
-		"Gra 'Kolko i krzyzyk'",
+		"Gra Kolko i krzyzyk",
 		"Testowa klasa CComplex dla liczb zespolonych",
-		"'Game of life'"
+		"Game of life",
+		"Gra w Pokera z komputerem"
 	};
 
 	void ShowMenu();
@@ -32,6 +33,7 @@ private:
 	void RunTicTacToeGame();
 	void TestCComplex();
 	void RunLifeGame();
+	void RunPokerGame();
 
 public:
 	int Run();
